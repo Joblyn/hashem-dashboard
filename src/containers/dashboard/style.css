@@ -1,0 +1,6 @@
+@media (min-width: 640px) {
+  .md-inner-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+}

@@ -1,8 +1,20 @@
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import Layout from "./containers/layout/layout";
 
 function App() {
-  return ( 
-    <div></div>
+  const [isLeftBarOpen, setIsLeftBarOpen] = useState(false);
+  const [isAsideOpen, setIsAsideOpen] = useState(false);
+
+  return (
+    <div>
+      <Layout
+        isLeftBarOpen={isLeftBarOpen}
+        setIsLeftBarOpen={setIsLeftBarOpen}
+        isAsideOpen={isAsideOpen}
+        setIsAsideOpen={setIsAsideOpen}
+      />
+    </div>
   );
 }
 
