@@ -7,7 +7,7 @@ import "./style.css";
 export default function Dasboard(props) {
   const { isAsideOpen, setIsAsideOpen, isLeftBarOpen, setIsLeftBarOpen } = props;
   return (
-    <div className="w-full bg-white min-h-screen">
+    <div className="w-full bg-white min-h-screen md:ml-68">
       <Header
         isLeftBarOpen={isLeftBarOpen}
         setIsLeftBarOpen={setIsLeftBarOpen}

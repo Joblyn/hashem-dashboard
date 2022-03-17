@@ -13,7 +13,7 @@ export default function Layout(props) {
       <LeftBar isLeftBarOpen={isLeftBarOpen} />
       {!matches ? (
         <div
-          className={`md:hidden absolute w-screen h-full z-30 bg-black opacity-20 ${
+          className={`md:hidden absolute w-screen h-screen z-30 bg-black opacity-20 ${
             isLeftBarOpen || isAsideOpen ? "block" : "hidden"
           }`}
           onClick={
