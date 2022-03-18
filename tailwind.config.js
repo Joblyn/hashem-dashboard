@@ -54,11 +54,14 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-      "3xl": "0px 0px 20px rgba(0, 0, 0, 0.05);"
+        "2.5xl": "0px 0px 15px rgba(0, 0, 0, 0.05)",
+      "3xl": "0px 0px 20px rgba(0, 0, 0, 0.05)",
+
       },
       spacing: {
         "98": "26rem",
         "68": "16rem",
+        "16.5": "4rem",
         "17": "5rem"
       },
     },

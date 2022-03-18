@@ -1,19 +1,13 @@
 import React from "react";
-import Header from "../../components/header";
 import Aside from "../aside/aside";
 import ProjectsAndStats from "../projs&stats/projs&stats";
 import "./style.css";
 
 export default function Dasboard(props) {
-  const { isAsideOpen, setIsAsideOpen, isLeftBarOpen, setIsLeftBarOpen } = props;
+  const { isAsideOpen } = props;
   return (
-    <div className="w-full bg-white min-h-screen md:ml-68">
-      <Header
-        isLeftBarOpen={isLeftBarOpen}
-        setIsLeftBarOpen={setIsLeftBarOpen}
-        setIsAsideOpen={setIsAsideOpen}
-      />
-      <main className="md-inner-grid relative">
+    <div className="w-screen lg:w-[calc(100vw-16rem)] bg-white min-h-screen lg:ml-68">
+      <main className="md-inner-grid relative mt-16.5">
         <ProjectsAndStats />
         <Aside isAsideOpen={isAsideOpen} />
       </main>

@@ -11,9 +11,9 @@ export default function Nav() {
         {NavList.map((item) => (
           <li
             key={`navlist-${item.text}`}
-            className="list-none text-center flex flex-row justify-start items-center py-2 pl-12 pr-3 cursor-pointer hover:bg-gray-800 text-gray-700  hover:text-black hover:text-opacity-70 transition-all"
+            className="list-none text-center flex flex-row justify-start items-center py-2 pl-9 pr-3 cursor-pointer hover:bg-gray-800 text-gray-700  hover:text-black hover:text-opacity-70 transition-all"
           >
-            <item.icon className="align-middle mr-4" />
+            <item.icon className="align-middle mr-6" />
             <span className="capitalize font-medium text-xs md:text-sm">
               {item.text}
             </span>

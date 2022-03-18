@@ -1,5 +1,6 @@
 import { useMediaQuery } from "@mui/material";
 import React from "react";
+import Header from "../../components/header";
 import Dasboard from "../dashboard/dashboard";
 import LeftBar from "../leftbar/leftbar";
 import "./style.css";
@@ -7,7 +8,7 @@ import "./style.css";
 export default function Layout(props) {
   const { isAsideOpen, setIsAsideOpen, isLeftBarOpen, setIsLeftBarOpen } =
     props;
-  const matches = useMediaQuery("(min-width:768px)");
+  const matches = useMediaQuery("(min-width:1024px)");
   return (
     <div className="w-full layout relative">
       <LeftBar isLeftBarOpen={isLeftBarOpen} />
@@ -28,6 +29,12 @@ export default function Layout(props) {
       ) : (
         ""
       )}
+      <Header
+        isLeftBarOpen={isLeftBarOpen}
+        setIsLeftBarOpen={setIsLeftBarOpen}
+        setIsAsideOpen={setIsAsideOpen}
+        isAsideOpen={isAsideOpen}
+      />
       <Dasboard
         isLeftBarOpen={isLeftBarOpen}
         setIsLeftBarOpen={setIsLeftBarOpen}
