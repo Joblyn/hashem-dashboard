@@ -11,7 +11,7 @@ module.exports = {
         btnhover: "",
         deep: "#0063B7",
         sky: "#41A9FA",
-        light: "#41A9FA",
+        light: "#94D2FF",
       },
       red: {
         deep: "#FF4955",

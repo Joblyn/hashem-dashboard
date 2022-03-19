@@ -8,7 +8,7 @@ export default function Search() {
       <SearchIcon className="align-middle w-4 h-4 " />
       <input
         type="text"
-        className="bg-[transparent] text-xs md:text-sm target:bg-[tranparent] focus-visible:outline-none 
+        className="bg-transparent text-xs md:text-sm target:bg-[tranparent] focus-visible:outline-none 
         placeholder:text-black placeholder:text-opacity-20 px-2 w-full
        block border-none pr-3 
         "
