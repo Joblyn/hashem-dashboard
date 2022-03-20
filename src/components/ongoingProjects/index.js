@@ -23,8 +23,8 @@ export default function OngoingProjects() {
             className={`py-2 w-16 ${
               current === "remaining"
                 ? "text-blue-btn text-opacity-100"
-                : "text-black"
-            } text-opacity-50 text-xs text-center cursor-pointer hover:text-opacity-100`}
+                : "text-black text-opacity-50"
+            } text-xs text-center cursor-pointer hover:text-opacity-100`}
             onClick={() => setCurrent("remaining")}
           >
             Remaining
@@ -33,8 +33,8 @@ export default function OngoingProjects() {
             className={`py-2 w-16 ${
               current === "ongoing"
                 ? "text-blue-btn text-opacity-100"
-                : "text-black"
-            } text-opacity-50 text-center text-xs cursor-pointer hover:text-opacity-100`}
+                : "text-black text-opacity-50"
+            } text-center text-xs cursor-pointer hover:text-opacity-100`}
             onClick={() => setCurrent("ongoing")}
           >
             Ongoing
@@ -43,8 +43,8 @@ export default function OngoingProjects() {
             className={`py-2 w-16 ${
               current === "completed"
                 ? "text-blue-btn text-opacity-100"
-                : "text-black"
-            } text-opacity-50 text-xs text-center cursor-pointer hover:text-opacity-100`}
+                : "text-black text-opacity-50"
+            } text-xs text-center cursor-pointer hover:text-opacity-100`}
             onClick={() => setCurrent("completed")}
           >
             Completed
