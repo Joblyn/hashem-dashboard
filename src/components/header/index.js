@@ -7,10 +7,10 @@ import { ReactComponent as Settings } from "../../assets/icons/settings.svg";
 import "./style.css";
 
 export default function Header(props) {
-  const { setIsAsideOpen, setIsLeftBarOpen } = props;
+  const {  isLeftBarOpen, setIsAsideOpen, setIsLeftBarOpen } = props;
   return (
     <header
-      className={`h-16.5 px-3 py-2 bg-white md:pl-6 lg:pl-6 flex flex-row items-center fixed top-0 z-40 w-screen lg:w-[calc(100vw-16rem)] lg:ml-68`}
+      className={`h-16.5 px-3 py-2 bg-white md:pl-6 lg:pl-6 flex flex-row items-center fixed top-0 ${isLeftBarOpen ? "z-20" : "z-40"} w-screen lg:w-[calc(100vw-16rem)] lg:ml-68`}
     >
       <span className="lg:hidden flex justify-center items-center">
         <Avatar onClick={() => setIsLeftBarOpen(true)} className="w-7 h-7" />

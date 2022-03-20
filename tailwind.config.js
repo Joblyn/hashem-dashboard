@@ -34,7 +34,7 @@ module.exports = {
       },
       purple: {
         avstart: "#6988B7", // avatar
-        avpend: "#9F87D4", // avatar
+        avend: "#9F87D4", // avatar
         progstart: "#508EFF", // progress
         progend: "#CB70EA", // progress
         barstart: "#8287FD", // prog bar
