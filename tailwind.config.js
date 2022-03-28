@@ -55,8 +55,8 @@ module.exports = {
     extend: {
       boxShadow: {
         "2.5xl": "0px 0px 15px rgba(0, 0, 0, 0.05)",
-      "3xl": "0px 0px 20px rgba(0, 0, 0, 0.05)",
-
+        "3xl": "0px 0px 20px rgba(0, 0, 0, 0.05)",
+        "blur": "1px 1px 5px 4px #fff"
       },
       spacing: {
         "98": "26rem",
